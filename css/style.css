@@ -1,0 +1,245 @@
+:root { 
+    --color_primario: black;
+    --color_secundario: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color_secundario);
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: var(--color_primario);
+    position: fixed;
+    width: 100%;
+    padding: .9em 0em;
+    border-bottom: 3px solid white;
+}
+
+nav .container ul li {
+    display: inline;
+    padding: .2em .7em;
+    margin: 1em;
+}
+
+nav .container ul li:hover {
+    border-bottom: 2px solid var(--color_secundario);
+}
+
+nav .container a {
+    color: var(--color_secundario);
+}
+
+.logo img { 
+    width: auto;
+    height: 50px;
+}
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: auto;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;     
+    font-size: 1.4em;
+    flex-wrap: wrap;
+}
+
+.sobre_mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre_mi img {
+    width: auto;
+    height: 300px;
+    margin-top: 3em;
+}
+
+section .links_sobre_mi {
+    margin-top: 2em;
+}
+
+section .links_sobre_mi li{
+    display: inline;
+    background-color: var(--color_primario);
+    border-radius: 100px;
+    padding: .2em .7em;
+    margin: 0em 1em 0em 0em;
+    background-color: var(--color_primario)
+}
+
+section .links_sobre_mi li:hover {
+    background-color: var(--color_secundario);
+    border: 2px solid var(--color_primario);
+}
+
+section .links_sobre_mi a{
+    color: var(--color_secundario);
+}
+
+section .links_sobre_mi a:hover{
+    color: var(--color_primario);
+}
+
+section .links_sobre_mi i{
+    margin-right: 1em;
+}
+section .wrap2 {
+    width: 80%;
+    height: auto;
+    padding: 5em 5em 0em 0em;
+}
+
+section .wrap2 h1 {
+    font-family: 'Moonllime', sans-serif;
+    font-size: 3em;
+    margin-top: 2em;
+
+}
+
+.proyectos {
+    background-color: var(--color_primario);
+    margin-top: 3em;
+}
+
+.proyectos .wrap3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.proyectos .card {
+    background-color: var(--color_secundario);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 3em 1em ;
+}
+
+.proyectos .card img {
+    width: 300px;
+    height: auto;
+}
+
+.proyectos .card a{
+    text-align: center;
+    color: var(--color_primario);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.proyectos .titulo_proyecto {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.proyectos .card a:hover {
+    border-bottom: 2px solid black;
+}
+
+.frase .wrap4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    max-width: 1700px;
+    margin: 3em;
+}
+
+.frase .texto_frase {
+    font-size: 1.5em;
+    width: 50%;
+    height: auto;
+}
+
+.contacto {
+    background-color: var(--color_primario);
+    margin-top: 3em;
+}
+
+.contacto .wrap5 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    max-width: 1700px;
+    margin: auto;
+    padding: 4em;
+}
+
+.logo_final {
+    width: auto;
+    height: 50px;
+}
+
+.redes_sociales li {
+    display: inline;
+}
+
+.redes_sociales a {
+    color: var(--color_secundario);
+}
+
+.redes_sociales i {
+    font-size: 2em;
+    margin-right: 2em;
+}
+
+@media (max-width: 915px) {
+    .sobre_mi {
+        flex-direction: column;
+    }
+
+    section .wrap2 {
+        padding: 0px;
+    }
+
+    .sobre_mi img {
+        margin-top: 6em;
+    }
+
+    .frase .wrap4 {
+        flex-direction: column;
+    }
+
+    .frase .texto_frase {
+        width: 90%;
+        height: auto;
+    }
+
+}
